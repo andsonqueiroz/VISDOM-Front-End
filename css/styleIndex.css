@@ -203,7 +203,7 @@ main{
 
 }
 .mapa_contato{
-    background-color: #A0A0A0; /* Alterar, foi definido cor apenas para dimensionar o tamanho do mapa */
+    background-color: #A0A0A0; /* Alterar!! foi definido cor apenas para dimensionar o tamanho do mapa */
     width: 900px;
     height: 400px;
     border-radius: 30px;
