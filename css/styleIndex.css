@@ -70,7 +70,7 @@ main{
     padding: 11px 20px;
     border-radius: 50px;
     font-weight: bold;
-    transition: 0.6s ease;
+    transition: background-color 0.6s ease;
 }
 .cliente_button:hover, .orcamento_button:hover{
     background-color: #3A8EEE;
@@ -282,7 +282,7 @@ footer i{
     body{
         padding-top: 99px;
     }
-    .cliente_button, .orcamento_button{
+    .cliente_button{
         padding: 5px 15px;
         border-radius: 50px;
         font-size: 12px;
