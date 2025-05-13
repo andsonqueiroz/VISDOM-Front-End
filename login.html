@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do cliente</title>
+    <link rel="stylesheet" href="css/styleLogin.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const cnpjInput = document.getElementById('cnpj');
+    
+          cnpjInput.addEventListener('input', function (e) {
+            let value = e.target.value;
+    
+            value = value.replace(/\D/g, '');
+    
+            value = value.slice(0, 14);
+    
+            if (value.length >= 3) {
+              value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+            }
+            if (value.length >= 6) {
+              value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+            }
+            if (value.length >= 9) {
+              value = value.replace(/^(\d{2})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3/$4');
+            }
+            if (value.length >= 13) {
+              value = value.replace(/^(\d{2})\.(\d{3})\.(\d{3})\/(\d{4})(\d)/, '$1.$2.$3/$4-$5');
+            }
+    
+            e.target.value = value;
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <div id="container-left">
+            <div class="title-left">
+                <h1>VISDOM</h1>
+                <h3>Tecnologia da informação e comunicação</h3>
+            </div>
+        </div>
+
+        <div id="container-right">
+            
+            <div class="icon-visdom">
+                <img src="images/logo-visdom.png" alt="visdom-logo">
+                <h1>LOGIN</h1>
+            </div>
+            
+            <p>Digite seu CNPJ para entrar na <span style="color: #7FB3EF;">ÁREA DO CLIENTE</span></p>
+            
+            <div class="login">
+                <form action="#">
+                    <input type="text" id="cnpj" placeholder="00.000.000/0000-00" maxlength="18">
+                    <br>
+                    <input type="submit" value="Entrar" class="entrar-button">
+                </form>
+            </div>
+
+            <p class="retornar-inicio"><a href="#">Voltar para o início</a></p>
+        </div>
+    </section>
+    
+</body>
+</html>
