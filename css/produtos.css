@@ -1,0 +1,582 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+footer{
+    background-color: #012650;
+    padding: 20px 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 100;
+}
+
+@font-face {
+    font-family: "Roboto Condesed";
+    src: url(/css/font/RobotoCondensed-Regular.ttf);
+}
+
+body, .container_info p, .icon_insta_phone, .categories ul{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condesed";
+}
+
+body{
+    padding-top: 121.2px;
+}
+
+.container_info{
+    background-color: black;
+    color: white;
+    padding: 5px 70px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.email, .icon_insta_phone{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.icon_insta_phone{
+    gap: 50px;
+    margin: 0px;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 70px;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+}
+
+.area_cliente a{
+    color: white;
+}
+
+.cliente_button{
+    text-decoration: none;
+    color: white;
+}
+
+.categories a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.8s ease, font-weight 0.8s ease;
+    font
+}
+.categories a:hover{
+    color: #7FB3EF;
+}
+#superior{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.categories ul{
+    box-sizing: border-box;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.cliente_button{
+    background-color: #7FB3EF;
+    padding: 11px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.containerConteudo{
+    max-width: 100%;
+    max-height: 100%; 
+    margin-top: 120px; 
+}
+
+.divImagemProdutos {
+    position: relative;
+    max-width: 90%;
+    height: 500px;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+  
+.imagemProdutos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.textoImagemProdutos{
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    right: 0;
+    height: 100%;
+    background-color: rgb(233, 233, 233, 50%);
+    z-index: 2;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: "Roboto Condesed";
+
+}
+  
+.container1BarraProdutos{
+    margin-top: 40px;
+    background-color: #D9D9D9;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.texto1{
+    max-width: 30%;
+    text-align: justify;
+    font-family: "Roboto Condesed";
+    font-size: 20px;
+}
+
+.imagem1{
+    width: 400px;
+    margin-left: 20px;
+}
+
+.container2BarraProdutos{
+    margin-top: 40px;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    align-items: center;    
+}
+
+.texto2{
+    max-width: 30%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    text-align: justify;
+    font-family: "Roboto Condesed";
+}
+
+.imagem2{
+    width: 400px;
+}
+
+.textoProdutos{
+    max-width: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Condesed";
+    background-color: #D9D9D9;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.containerProdutos{
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow:  0, 2px, 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerProdutos img{
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.containerProdutos p{
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto Condesed";
+}
+
+.containerProdutos button {
+    background-color: #2563eb; 
+    color: white; 
+    height: auto;
+    padding: 12px 25px; 
+    border: none; 
+    border-radius: 25px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    display: inline-block; 
+}
+
+.containerProdutos button:hover {
+    background-color: #1e40af;
+    transform: scale(1.05); 
+}
+
+.containerProdutos button:focus {
+    outline: none; 
+}
+
+.containerProdutos button:active {
+    background-color: #1e3a8a; 
+}
+
+.todosProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content-footer{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.categorias-footer li, .categorias-footer a{
+    list-style: none;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+.logo-footer img{
+    height: 60px;
+}
+.numero-footer, .endereco-footer, .email-footer{
+    display: flex;
+    align-items: center;   
+    gap: 10px;             
+    color: white;
+    margin-bottom: 10px;
+}
+footer i{
+    font-size: 20px;        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px; 
+}
+
+.siteVisdom{
+    text-decoration: none;
+    color: white;
+}
+
+.barraNavegacao a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "Roboto Condesed";
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: black;
+}
+
+.barraNavegacao a h1 {
+    font-size: 16px;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.barraNavegacao a:hover {
+    background-color: #ccc; 
+    color: white;
+}
+
+.barraNavegacao a:hover h1 {
+    color: white;
+}
+
+.loginCliente {
+    font-family: "Roboto Condesed";
+    margin: 0;
+    height: 40px;
+    background-color: #7FB3EF;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.loginCliente:hover {
+    background-color: #2563eb; 
+    transform: scale(1.03); 
+}
+
+.linkLoginCliente {
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    #superior {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #informacoes .container_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .email, .icon_insta_phone {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .categories ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .categories ul li {
+        margin: 0;
+    }
+
+    .area_cliente {
+        margin-top: 10px;
+    }
+
+    .tiposServico {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .divServico,
+    .divServicoAnvisa {
+        flex: 1 1 30%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .categories ul li a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .area_cliente .cliente_button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .container1BarraProdutos,
+    .container2BarraProdutos {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .texto1,
+    .texto2 {
+        max-width: 100%;
+        font-size: 18px;
+        margin: 20px 0 0 0;
+        text-align: center;
+        text-align: justify;
+    }
+
+    .imagem1,
+    .imagem2 {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .textoProdutos h2{
+        width: 80%;
+        text-align: center;
+    }
+
+    .textoImagemProdutos{
+    width: 50%;
+    }
+
+    .textoProdutos {
+        width: 90%;
+        margin: 30px auto;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .containerProdutos {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .containerProdutos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerProdutos p {
+        font-size: 14px;
+    }
+
+    .containerProdutos button {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 140px;
+    }
+
+    .categories ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .categories ul li a {
+        font-size: 13px;
+    }
+
+    .area_cliente .cliente_button {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .texto1,
+    .texto2 {
+        font-size: 16px;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    .imagem1,
+    .imagem2 {
+        max-width: 90%;
+    }
+
+    .textoProdutos {
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .containerProdutos {
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    .containerProdutos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerProdutos p {
+        font-size: 13px;
+    }
+
+    .containerProdutos button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    
+}
